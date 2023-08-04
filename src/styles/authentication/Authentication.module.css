@@ -1,0 +1,32 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  box-sizing: border-box;
+  padding-inline: 20px;
+}
+
+.main h2 {
+  line-height: 0.8;
+}
+
+.form {
+  max-width: 300px;
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: clamp(26px, 0.8529rem + 2.0588vw, 40px) clamp(28px, 0.8125rem + 2.5vw, 45px);
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.form button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form p {
+  text-align: center;
+  font-size: 17px;
+}
