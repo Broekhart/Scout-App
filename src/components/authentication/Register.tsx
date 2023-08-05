@@ -33,6 +33,8 @@ const Register = ({ toggleForm }: Props) => {
         <input type='email' required name='email' />
         <label htmlFor='name'>Name</label>
         <input type='text' required name='name' />
+        <label htmlFor='club'>Your club</label>
+        <input type='text' required name='club' />
         <label htmlFor='password'>Password</label>
         <input type='password' required name='password' />
         {success && <span className='success'>{success}</span>}
