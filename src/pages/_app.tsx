@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import '@/styles/shared/alerts.css';
+import '@/styles/shared/colors.css';
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
