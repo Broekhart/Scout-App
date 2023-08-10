@@ -8,3 +8,13 @@ export interface RegisterDataRequest extends NextApiRequest {
     email: string;
   };
 }
+
+export interface ScoutRequest extends NextApiRequest {
+  body: {
+    name: string;
+    experience: string;
+    availability: string;
+    coverImage?: string;
+    skills?: string[];
+  };
+}
