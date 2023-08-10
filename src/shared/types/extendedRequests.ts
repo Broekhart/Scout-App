@@ -14,6 +14,7 @@ export interface ScoutRequest extends NextApiRequest {
     name: string;
     experience: string;
     availability: string;
+    description?: string;
     coverImage?: string;
     skills?: string[];
   };

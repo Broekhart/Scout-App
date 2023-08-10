@@ -7,13 +7,14 @@ const ScoutSchema = new mongoose.Schema(
       required: true,
     },
     experience: {
-      type: String,
+      type: Number,
       required: true,
     },
     availability: {
       type: String,
       required: true,
     },
+    description: String,
     coverImage: String,
     skills: [String],
   },
