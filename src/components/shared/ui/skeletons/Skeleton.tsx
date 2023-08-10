@@ -6,7 +6,7 @@ type Props = {
 
 const SkeletonCard = ({ quantity = 1, height, width }: Props) => {
   const skeletonCards = Array.from({ length: quantity }, (_, index) => (
-    <div key={index} className='skeleton_card' style={{ height, width }}>
+    <div key={index} className='skeleton_card' style={{ height, maxWidth: width, width: '100%' }}>
       <div className='slider'></div>
     </div>
   ));
