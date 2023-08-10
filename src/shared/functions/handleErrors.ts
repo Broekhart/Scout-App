@@ -12,26 +12,8 @@ export const userErrors = (error: any) => {
   return message;
 };
 
-export const articleErrors = (error: any) => {
+export const scoutErrors = (error: any) => {
   let message = genericErrors(error);
-  if (error.code === 11000) message = "L'articolo esiste già";
-  return message;
-};
-
-export const categoryErrors = (error: any) => {
-  let message = genericErrors(error);
-  if (error.code === 11000) message = 'La categoria esiste già';
-  return message;
-};
-
-export const productIdErrors = (error: any) => {
-  let message = genericErrors(error);
-  if (message.includes('_id')) message = "L'id non è valido";
-  return message;
-};
-
-export const verifyUserErrors = (error: any) => {
-  let message = '';
-  if (error.message.includes('split')) message = 'Il bearer token è mancante';
+  if (error.code === 11000) message = 'Il nome esiste già';
   return message;
 };
