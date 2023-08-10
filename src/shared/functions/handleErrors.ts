@@ -12,6 +12,12 @@ export const userErrors = (error: any) => {
   return message;
 };
 
+export const verifyUserErrors = (error: any) => {
+  let message = '';
+  if (error.message.includes('split')) message = 'Il bearer token è mancante';
+  return message;
+};
+
 export const scoutErrors = (error: any) => {
   let message = genericErrors(error);
   if (error.code === 11000) message = 'Il nome esiste già';
