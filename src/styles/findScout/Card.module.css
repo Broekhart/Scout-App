@@ -4,9 +4,17 @@
   border-radius: 10px;
 }
 
+.bigger_card {
+  padding: 20px 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  max-width: 450px;
+  gap: 20px;
+}
+
 .image {
   position: relative;
-  aspect-ratio: 1.5 / 1;
+  aspect-ratio: 1.4 / 1;
   width: calc(100% + 30px);
   margin: -20px 0 0 -15px;
   margin-bottom: 10px;
@@ -15,15 +23,28 @@
 
 .image img {
   object-fit: cover;
+  object-position: 50% 20%;
   border-radius: 10px 10px 0 0;
 }
 
 .badges {
   margin-block: 15px;
+  overflow-x: auto;
 }
 
-.badges * {
+.bigger_card .badges {
+  margin-block: 0;
+  flex-wrap: wrap;
+}
+
+.bigger_card .badges * {
   flex: 1;
+  padding-block: 10px;
+  font-size: 18px;
+}
+
+.badges::-webkit-scrollbar {
+  height: 0;
 }
 
 .card button {

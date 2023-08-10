@@ -159,6 +159,10 @@ video {
   .fill {
     min-height: calc(100svh - var(--mobile_header_height));
   }
+
+  .mobile_row {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (width > 600px) {

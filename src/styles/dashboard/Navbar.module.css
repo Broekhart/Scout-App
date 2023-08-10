@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-:is(.navbar) :is(a:hover, button:hover) {
+:is(.navbar) :is(a:not(a:has(img)):hover, button:hover) {
   background-color: var(--secondary);
 }
 
