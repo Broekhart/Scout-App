@@ -1,11 +1,18 @@
 import type { ReactElement } from 'react';
 import type { NextPageWithLayout } from './_app';
 import DashboardLayout from '@/layouts/DashboardLayout';
+import Filter from '@/components/findScout/Filter';
+import Card from '@/components/findScout/Card';
+import styles from '@/styles/findScout/Home.module.css';
 
 const Home: NextPageWithLayout = () => {
   return (
     <section>
-      <p>Home</p>
+      <h2>Lista scout</h2>
+      <Filter />
+      <section className={styles.scout_grid}>
+        <Card />
+      </section>
     </section>
   );
 };

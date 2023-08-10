@@ -4,10 +4,12 @@
   --white: #fdfaff;
   --black: #270143;
   --primary: #6f1cb0;
+  --accent: #9517f5;
   --secondary: #d7abfa;
   --background: #efe1fa;
   --error: #f44336;
   --success: #3c763d;
+  --grey: hsla(0, 0%, 0%, 0.7);
   --desktop_header_height: 140px;
   --desktop_header_height: 40px;
   --inline_padding: clamp(1.5rem, 0.9375rem + 1.6667vw, 2.7rem);
@@ -124,6 +126,16 @@ video {
 .flex_column {
   display: flex;
   flex-direction: column;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 5px 12px;
+  background-color: var(--background);
+  color: var(--accent);
+  border-radius: 20px;
+  width: fit-content;
+  text-align: center;
 }
 
 @media only screen and (width <= 600px) {
