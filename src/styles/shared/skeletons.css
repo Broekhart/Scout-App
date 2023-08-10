@@ -1,0 +1,22 @@
+.skeleton_card {
+  border-radius: 10px;
+  background-color: #ad8fc4;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  width: 10px;
+  background-color: white;
+  filter: blur(10px);
+  transform: skew(-30deg);
+  animation: 1s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    translate: 418px;
+  }
+}
