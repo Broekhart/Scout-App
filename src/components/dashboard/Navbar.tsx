@@ -17,7 +17,9 @@ const Navbar = () => {
   return (
     <section className='white_bg'>
       <div className={`${styles.navbar} flex_column`}>
-        <Image src='/logo.png' height={70} width={70} alt='logo' className={styles.image} />
+        <Link href='/'>
+          <Image src='/logo.png' height={70} width={70} alt='logo' className={styles.image} />
+        </Link>
         <div className='flex_column desktop' style={{ gap: '20px', alignSelf: 'stretch' }}>
           {links.map((link) => (
             <Link
